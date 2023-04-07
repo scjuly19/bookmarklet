@@ -10,7 +10,8 @@
     <p> Let's paint it red.
         <a href="javascript: (function () {
             var script = document.createElement('script');
-            script.src = 'https://scjuly19.github.io/bookmarklet/bookmarklet.js';
+            var url = 'https://scjuly19.github.io/bookmarklet/bookmarklet.js';
+            script.src = url + '?' + new Date().getTime();
             document.body.appendChild(script);
           })();">
             click here.
