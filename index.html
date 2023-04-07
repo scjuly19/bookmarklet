@@ -8,7 +8,11 @@
 </head>
 <body>
     <p> Let's paint it red.
-        <a href="javascript:https://cdn.jsdelivr.net/gh/scjuly19/bookmarklet@main/bookmarklet.js">
+        <a href="javascript: (function () {
+            var script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/gh/scjuly19/bookmarklet@dev/bookmarklet.js';
+            document.body.appendChild(script);
+          })();">
             click here.
         </a>
     </p>
